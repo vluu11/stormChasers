@@ -44,7 +44,10 @@ class WeatherService {
     return `${this.baseURL}/geo/1.0/direct?limit=1&appid=${this.apiKey}`;
   }
   // TODO: Create buildWeatherQuery method
-  // private buildWeatherQuery(coordinates: Coordinates): string {}
+  private buildWeatherQuery(coordinates: Coordinates): string {
+    const{lat, lon} = coordinates;
+    return `${this.baseURL}/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=${this.apiKey}`;
+  }
   // TODO: Create fetchAndDestructureLocationData method
   // private async fetchAndDestructureLocationData() {}
   // TODO: Create fetchWeatherData method
