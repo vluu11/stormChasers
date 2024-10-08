@@ -22,6 +22,8 @@ To use this app, the user must configure the environment variables for the API b
 
 ## Credits
 Vuong Luu
+ - Deployed: https://stormchasers.onrender.com
+ - Repo: https://github.com/vluu11/stormChasers
 
 ## License
 
