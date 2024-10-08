@@ -51,7 +51,7 @@ class HistoryService {
     // Get all cities, add the new city, write all the updated cities, return the newCity
     return await this.getCities()
       .then((cities) => {
-        if (cities.find((index) => index.name === city)) {
+        if (cities.find((index) => index.name === newCity.name)) {
           return cities;
         }
         return [...cities, newCity];
